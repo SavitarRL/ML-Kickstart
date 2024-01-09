@@ -3,19 +3,20 @@ import random
 import torch
    
 class LinModel:
-    def __init__(self, m= 2,c=4):
+    def __init__(self, m= 2,c=4, num_points = 20):
         self.m = m
         self.c = c
-        
+        self.num_points = num_points
+
     def func(self,x):
         return self.m*x +self.c
         
-    def true_data(self, num_points = 20, messy = False):
-        x_list = np.linspace(-5,5,num_points)
+    def true_data(self, messy = False):
+        x_list = np.linspace(-5,5,self.num_points)
         data = self.func(x_list)
         answer_data = []
         
-        for i in range(num_points):
+        for i in range(self.num_points):
             random_errors = 0
             if messy:
                 random_errors = random.uniform(-2,2)
