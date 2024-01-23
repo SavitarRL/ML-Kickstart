@@ -1,10 +1,11 @@
 # ML-Kickstart
 
-1. Polynomial regression
-- written neural network for linear regression
-- generalising to higher powers
-- Quantum ML:  linear regression using Qiskit and SciPy
+1. Regression 
+- self-written neural network for linear and quadratic regression and comparison using Pytorch (in `polynomials/learning functions.ipynb`)
+- Quantum ML:  linear regression using Qiskit and SciPy (in `polynomials/qml_linear.ipynb`)
 
-2. MNIST image classification
+2. Classification 
+- Image classification on MNIST dataset using neural networks (in `mnist/main_mnist.ipynb`)
+- Iris classification using Support Vector Classifier and Variational Quantum Classifier (in `PCA/VQC.ipynb`)
 
-3. Text classification (to be done)
+3. Text classification (in `text classification`; to be done)
